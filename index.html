@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PatrickSnipes</title>
+        <style>
+            #banner {
+                text-align: center;
+            }
+            #patrickSnipes {
+                background-color: #EEE;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 18;
+                bottom: 0;
+                margin: auto;
+            }
+            body {
+                font-family: sans-serif;
+            }
+            p {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="banner">PatrickSnipes</h1>
+        <p>If the game is not working, go to <a href="chrome://flags">chrome://flags</a>, and disable 2d canvas acceleration<br/></p>
+        <canvas id="patrickSnipes" width="480" height="360"></canvas>
+        <script>
+            var ps = document.getElementById("patrickSnipes");
+            var ctx = canvas.getContext("2d");
+            
+            ctx.beginPath();
+            ctx.rect(20, 40, 50, 50);
+            ctx.fillstyle = "#800080";
+            ctx.fill();
+            ctx.closePath();
+        </script>
+    </body>
+</html>
